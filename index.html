@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survery form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Portfolio Survey Form</h1>
+                <p>Thank you for helping me create a better portfolio</p>
+            </header>
+        
+        <form id="survey-form">
+            <h2>Personal information</h2>
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                    class="form-control"
+                    placeholder="Please enter your name"
+                    required/>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    class="form-control"
+                    placeholder="Please enter your email"
+                    required/>
+            </div>
+                
+            <div class="form-group">
+                <label id="number-label" for="number">Age:<span class="clue">(optional)</span></label>
+                <input 
+                    type="number" 
+                    name="age" 
+                    id="age"
+                    min="10"
+                    max="100"
+                    class="form-control"
+                    placeholder="Age"
+                    />
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes you?</p>
+                <select id="role-selector" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value="employer">Employer</option>
+                  <option value="recruiter">Recruiter</option>
+                  <option value="developer">Developer</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            <h2 id="info">Information about the portfolio</h2>
+            <div class="form-group">
+                <p>Would you recommend this portfolio to a friend?</p>
+                
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-recommend"
+                    value="definitely"
+                    class="input-radio"
+                    checked
+                    >Definitely 
+                </label>
+
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-recommend"
+                    value="maybe"
+                    class="input-radio"
+                    checked
+                    >Maybe 
+                </label>
+
+                <label>
+                    <input 
+                    type="radio"
+                    name="user-recommend"
+                    value="not-certain"
+                    class="input-radio"
+                    checked
+                    >Not certain 
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite project in this portfolio?</p>
+                <select id="project-selector" name="project" class="form-control" required>
+                  <option disabled selected value>Select project</option>
+                  <option value="student">The tribute page</option>
+                  <option value="job">The survey form</option>
+                  <option value="learner">The product landing page</option>
+                  <option value="preferNo">The technical documentation Page</option>
+                  <option value="other">The personal portfolio page</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What would you like to see improved?</p>
+                
+                <label
+                ><input
+                    name="prefer"
+                    value="tribute-page"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Tribute page</label
+               >
+
+                <label
+                ><input
+                    name="prefer"
+                    value="survey-form"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Survey form</label
+                >
+
+                <label
+                ><input
+                    name="prefer"
+                    value="product-landing-page"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Product landing page</label
+                >
+
+                <label
+                ><input
+                    name="prefer"
+                    value="technical-documentation-page"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Technical documentation page</label
+                >
+                
+                <label
+                ><input
+                    name="prefer"
+                    value="personal-portfolio-page"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Personal portfolio page</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>Comments or suggestions</p>
+
+                <textarea 
+                name="comment" 
+                id="comments" 
+                cols="40" 
+                rows="4"
+                class="input-textarea"
+                placeholder="Please add any comments or suggestions."
+                ></textarea>
+            </div>
+
+            <div class="form-goup">
+                <button 
+                type="submit" 
+                id="submit" 
+                class="submit-button"
+                >Submit
+                </button>
+            </div>
+
+            <div class="form-group">
+                <h3 id="thank-you">Thank you again for your valuable input!</h3>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
