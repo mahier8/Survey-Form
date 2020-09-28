@@ -1,5 +1,5 @@
 # My Survey Form
-This project creates an opportinity for anyone who acesses this form to provide feedback for my portfolio page.   
+This project creates an opportunity for anyone who acesses this form to provide feedback for my portfolio page.   
 ***
 ### Why the project is useful
 The survey is engulfed in a container, with an image set as the background. Different input tags are used within the form itself. The project therefore offers a diverse range of possiblities in terms of ways to collect information.
